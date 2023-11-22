@@ -19,5 +19,14 @@ fn main() {
             println!("{}", n);
             break;
         }
-    } 
+    }
+
+    let mut m = 10;
+    loop {
+        m += 1;
+        println!("{}", m);
+        if m > 100 {
+            break;
+        }
+    }
 }
