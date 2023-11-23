@@ -6,8 +6,8 @@
 fn main() {
 
 
-    // let mut nums = [10,9,8,7,6,5,4,3,2,1,0,-1];
-    // println!("{:?}", bubble_sort_with_flag(&mut nums));
+    let mut nums = [10,9,8,7,6,5,4,3,2,1,0,-1];
+    println!("{:?}", bubble_sort_with_flag(&mut nums));
 
     println!("{}", recur(12));
 
