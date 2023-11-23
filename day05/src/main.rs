@@ -6,8 +6,10 @@
 fn main() {
 
 
-    let mut nums = [10,9,8,7,6,5,4,3,2,1,0,-1];
-    println!("{:?}", bubble_sort_with_flag(&mut nums));
+    // let mut nums = [10,9,8,7,6,5,4,3,2,1,0,-1];
+    // println!("{:?}", bubble_sort_with_flag(&mut nums));
+
+    println!("{}", recur(12));
 
     
 
@@ -33,4 +35,17 @@ fn bubble_sort_with_flag(nums: &mut [i32]) -> &mut [i32]{
         if !flag {break};  // 此轮冒泡未交换任何元素，直接跳出
     }
     nums
+}
+
+
+/* 递归 */
+fn recur(n: i32) -> i32 {
+    // 终止条件
+    if n == 1 {
+        return 1;
+    }
+    // 递：递归调用
+    let res = recur(n - 1);
+    // 归：返回结果
+    n + res
 }
